@@ -23,7 +23,7 @@ for j in range(86, 89):
         frame = cv2.flip(frame, 1)
         cv2.rectangle(frame,(0,40),(300,300),(255,255,255),2)
         frame=frame[40:300,0:300]
-        cv2.putText(frame, 'Ready? Press "Q" ! :)', (100, 50), cv2.FONT_HERSHEY_SIMPLEX, 1.3, (0, 255, 0), 3,
+        cv2.putText(frame, 'Press "Q" to cap screen', (100, 50), cv2.FONT_HERSHEY_SIMPLEX, 1.3, (255, 255, 255), 3,
                     cv2.LINE_AA)
         cv2.imshow('frame', frame)
         if cv2.waitKey(25) == ord('q'):
